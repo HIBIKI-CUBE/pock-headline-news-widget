@@ -12,12 +12,13 @@ import SnapKit
 import Defaults
 
 class HeadLineNewsWidget: NSObject, PKWidget {
-    static var identifier: String = "\(HeadLineNewsWidget.self)"
+    
+    var identifier = NSTouchBarItem.Identifier("\(HeadLineNewsWidget.self)")
 
     var customizationLabel: String = "HeadLineNews"
 
     var view: NSView!
-    let headLineNewsView = HeadLineNewsView(frame: NSRect(x: 0, y: 0, width: 200, height: 30))
+    let headLineNewsView = HeadLineNewsView(frame: NSRect(x: 0, y: 0, width: 100, height: 30))
 
     var rssParser: RSSParser
     var items: [Item] = []

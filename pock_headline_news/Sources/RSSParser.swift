@@ -81,7 +81,16 @@ class RSSParser {
             let title = try body.nodes(forXPath: "title").first?.stringValue ?? ""
             let link = try body.nodes(forXPath: "link").first?.stringValue ?? ""
             let pubDate = try body.nodes(forXPath: "pubDate").first?.stringValue ?? ""
-            let description = try body.nodes(forXPath: "description").first?.stringValue ?? ""
+            let descriptionRaw = try body.nodes(forXPath: "description").first?.stringValue ?? ""
+//            let description = try NSAttributedString(
+//                    data: descriptionRaw.data(using: .utf8)!,
+//                    options: [
+//                        .documentType: NSAttributedString.DocumentType.html,
+//                        .characterEncoding: String.Encoding.utf8.rawValue
+//                    ],
+//                    documentAttributes: nil
+//                ).string.components(separatedBy: "\n")[0].components(separatedBy: "\t")[2] as String
+            let description = descriptionRaw
 
             return Item(title: title, pubDate: pubDate, link: link, description: description)
         } catch {

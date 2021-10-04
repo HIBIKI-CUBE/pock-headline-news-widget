@@ -132,7 +132,8 @@ class HeadLineNewsView: NSView {
 
         if self.currentIndex < self.items.count {
             let item = self.items[self.currentIndex]
-            let news = "【\(item.title)】 \(item.description)"
+//            let news = "【\(item.title)】 \(item.description)"
+            let news = "\(item.title)"
             self.newsLabel.stringValue = news
             self.newsLabel.sizeToFit()
             self.setAnimation()

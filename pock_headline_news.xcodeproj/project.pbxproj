@@ -20,7 +20,42 @@
 		422F66FD26F6393D00AEFAE0 /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422F66FC26F6393D00AEFAE0 /* Preferences.swift */; };
 		422F670126F6620700AEFAE0 /* HeadLineNewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422F670026F6620700AEFAE0 /* HeadLineNewsView.swift */; };
 		422F670426F73D9C00AEFAE0 /* NSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422F670326F73D9C00AEFAE0 /* NSViewController.swift */; };
+		B6704E12270AE62E00EC2846 /* Defaults in Frameworks */ = {isa = PBXBuildFile; fileRef = B6704E0B270AE62700EC2846 /* Defaults */; };
+		B6704E13270AE62E00EC2846 /* PockKit in Frameworks */ = {isa = PBXBuildFile; fileRef = B6704E0D270AE62700EC2846 /* PockKit */; };
+		B6704E14270AE62E00EC2846 /* Pods-pock_headline_news in Frameworks */ = {isa = PBXBuildFile; fileRef = B6704E0F270AE62700EC2846 /* Pods-pock_headline_news */; };
+		B6704E15270AE62E00EC2846 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; fileRef = B6704E11270AE62700EC2846 /* SnapKit */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B6704E0A270AE62700EC2846 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B6704E03270AE62700EC2846 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 681ED615647247731F0CEE24CDA75984;
+			remoteInfo = Defaults;
+		};
+		B6704E0C270AE62700EC2846 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B6704E03270AE62700EC2846 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6D326CCACC5674AD0F10B08465235262;
+			remoteInfo = PockKit;
+		};
+		B6704E0E270AE62700EC2846 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B6704E03270AE62700EC2846 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 99F28C43A549A2B82A65D550D2D8D8E4;
+			remoteInfo = "Pods-pock_headline_news";
+		};
+		B6704E10270AE62700EC2846 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B6704E03270AE62700EC2846 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 979486118B3E90C08386079D57962701;
+			remoteInfo = SnapKit;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		16DE1A92207414EC9F67EF95 /* libPods-pock_headline_news.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-pock_headline_news.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,6 +77,7 @@
 		422F670226F6F4D400AEFAE0 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		422F670326F73D9C00AEFAE0 /* NSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSViewController.swift; sourceTree = "<group>"; };
 		76F407550A6E65EEB6AE811E /* Pods-pock_headline_news.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pock_headline_news.debug.xcconfig"; path = "Target Support Files/Pods-pock_headline_news/Pods-pock_headline_news.debug.xcconfig"; sourceTree = "<group>"; };
+		B6704E03270AE62700EC2846 /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = Pods/Pods.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,7 +85,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6704E14270AE62E00EC2846 /* Pods-pock_headline_news in Frameworks */,
+				B6704E13270AE62E00EC2846 /* PockKit in Frameworks */,
+				B6704E12270AE62E00EC2846 /* Defaults in Frameworks */,
 				064160C7555DC443541D3C5F /* libPods-pock_headline_news.a in Frameworks */,
+				B6704E15270AE62E00EC2846 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,9 +188,21 @@
 		6D840EE9C41293C71BFA9DAE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B6704E03270AE62700EC2846 /* Pods.xcodeproj */,
 				16DE1A92207414EC9F67EF95 /* libPods-pock_headline_news.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B6704E04270AE62700EC2846 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B6704E0B270AE62700EC2846 /* Defaults */,
+				B6704E0D270AE62700EC2846 /* PockKit */,
+				B6704E0F270AE62700EC2846 /* Pods-pock_headline_news */,
+				B6704E11270AE62700EC2846 /* SnapKit */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,7 +234,7 @@
 		422F66BC26F2020200AEFAE0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1250;
+				LastUpgradeCheck = 1300;
 				TargetAttributes = {
 					422F66C326F2020200AEFAE0 = {
 						CreatedOnToolsVersion = 12.5.1;
@@ -201,12 +253,53 @@
 			mainGroup = 422F66BB26F2020200AEFAE0;
 			productRefGroup = 422F66C526F2020200AEFAE0 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = B6704E04270AE62700EC2846 /* Products */;
+					ProjectRef = B6704E03270AE62700EC2846 /* Pods.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				422F66C326F2020200AEFAE0 /* pock_headline_news */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		B6704E0B270AE62700EC2846 /* Defaults */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			name = Defaults;
+			path = libDefaults.a;
+			remoteRef = B6704E0A270AE62700EC2846 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B6704E0D270AE62700EC2846 /* PockKit */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			name = PockKit;
+			path = libPockKit.a;
+			remoteRef = B6704E0C270AE62700EC2846 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B6704E0F270AE62700EC2846 /* Pods-pock_headline_news */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			name = "Pods-pock_headline_news";
+			path = "libPods-pock_headline_news.a";
+			remoteRef = B6704E0E270AE62700EC2846 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B6704E11270AE62700EC2846 /* SnapKit */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			name = SnapKit;
+			path = libSnapKit.a;
+			remoteRef = B6704E10270AE62700EC2846 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		422F66C226F2020200AEFAE0 /* Resources */ = {
@@ -410,6 +503,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
 			};
 			name = Release;
 		};
@@ -420,7 +514,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = WLCQDVKTS9;
+				DEVELOPMENT_TEAM = NPSM864R9U;
 				INFOPLIST_FILE = pock_headline_news/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -428,7 +522,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.p-x9.pock-headline-news";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.p-x9.pock-headline-news.hibiki";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "pock_headline_news/pock_headline_news-Bridging-Header.h";
@@ -445,7 +539,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = WLCQDVKTS9;
+				DEVELOPMENT_TEAM = NPSM864R9U;
 				INFOPLIST_FILE = pock_headline_news/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -453,7 +547,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.p-x9.pock-headline-news";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.p-x9.pock-headline-news.hibiki";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "pock_headline_news/pock_headline_news-Bridging-Header.h";
